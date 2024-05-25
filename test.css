@@ -1,0 +1,13 @@
+.showCSS{
+
+event:expression(
+
+onload = function()
+
+{
+
+alert('xss');
+
+}
+
+)
