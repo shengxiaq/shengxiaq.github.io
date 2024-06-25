@@ -1,3 +1,4 @@
-.web_qrcode_img {
-  background-image: url(../Img/Logo.png);
+/*图片替换*/
+img {
+    content: url(../Img/Logo.png);
 }
