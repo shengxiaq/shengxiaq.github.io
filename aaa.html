@@ -1,8 +1,9 @@
-<iframe src="https://220.203.28.230:8015/LowCode/Window/OpenWindow?"></iframe>
+<!-- <iframe src="https://220.203.28.230:8015/LowCode/Window/OpenWindow?"></iframe> -->
 <script>
 // childwin = window.open("https://xcxp.bmcc.com.cn/rights-front/dist/index.html#/login?appendParam=%257B%257D&toPath=");
+	childwin = window.open("https://220.203.28.230:8015/LowCode/Window/OpenWindow?");
 function sendMessage(){
-	document.getElementsByTagName("iframe")[0].contentWindow.postMessage('{"Events":[{"MethodName":"confirm","Param":"111"}]}', '*');
+	childwin.postMessage('{"Events":[{"MethodName":"confirm","Param":"111"}]}', '*');
 }
-(function(){setTimeout("sendMessage()", 2000);}());
+(function(){setTimeout("sendMessage()", 3000);}());
 </script>
